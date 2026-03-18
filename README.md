@@ -201,20 +201,20 @@ All integrations are additive. SEED works without any of them installed.
 ## Install
 
 ```bash
-npx @chrisai/seed
+npm i -g @chrisai/seed
 ```
 
 One command. Installs the skill to `~/.claude/commands/seed/` — available in every workspace.
 
 ```bash
 # Global install (default) — available everywhere
-npx @chrisai/seed
+npm i -g @chrisai/seed
 
 # Install to current project only
-npx @chrisai/seed --local
+npm i -g @chrisai/seed -- --local
 
 # Custom Claude config directory
-npx @chrisai/seed --config-dir /path/to/.claude
+npm i -g @chrisai/seed -- --config-dir /path/to/.claude
 ```
 
 Then open Claude Code and type `/seed` to start.
@@ -235,7 +235,7 @@ No hooks, no MCP servers, no workspace data. SEED is pure markdown — zero runt
 ### Requirements
 
 - [Claude Code](https://claude.ai/code)
-- Node.js >= 16 (for npx install only — SEED itself has no runtime deps)
+- Node.js >= 16 (for install script only — SEED itself has no runtime deps)
 
 ---
 
