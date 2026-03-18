@@ -8,7 +8,7 @@ Build the SEED skill from a confirmed Skillsmith spec. Each phase creates a laye
 
 **v0.1 Initial Release** (v0.1.0)
 Status: In progress
-Phases: 2 of 5 complete
+Phases: 4 of 5 complete
 
 ## Phases
 
@@ -16,8 +16,8 @@ Phases: 2 of 5 complete
 |-------|------|-------|--------|-----------|
 | 1 | Entry Point & Structure | 1 | Complete | 2026-03-17 |
 | 2 | Core Tasks | 3 | Complete | 2026-03-18 |
-| 3 | Data Layer & Templates | 2 | Not started | - |
-| 4 | Supporting Tasks & Checklist | 2 | Not started | - |
+| 3 | Data Layer & Templates | 2 | Complete | 2026-03-18 |
+| 4 | Supporting Tasks & Checklist | 2 | Complete | 2026-03-18 |
 | 5 | Integration & Installation | 1 | Not started | - |
 
 ## Phase Details
@@ -64,8 +64,8 @@ Phases: 2 of 5 complete
 - templates/planning-{type}.md — migrate and adapt from workspace root
 
 **Plans:**
-- [ ] 03-01: Create data/ files for all 5 types (15 files)
-- [ ] 03-02: Migrate and adapt 5 PLANNING templates into skill
+- [x] 03-01: Create data/ files for all 5 types (15 files)
+- [x] 03-02: Migrate and adapt 5 PLANNING templates into skill
 
 ### Phase 4: Supporting Tasks & Checklist
 
@@ -79,8 +79,8 @@ Phases: 2 of 5 complete
 - checklists/planning-quality.md — quality gate for graduate/launch
 
 **Plans:**
-- [ ] 04-01: Create tasks/status.md and tasks/add-type.md
-- [ ] 04-02: Create checklists/planning-quality.md
+- [x] 04-01: Create tasks/status.md and tasks/add-type.md
+- [x] 04-02: Create checklists/planning-quality.md
 
 ### Phase 5: Integration & Installation
 

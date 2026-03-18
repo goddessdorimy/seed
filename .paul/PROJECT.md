@@ -25,13 +25,16 @@ Builders can go from vague idea to structured, PAUL-ready project plan through g
 - ✓ Task: graduate.md — move to apps/ with git — Phase 2
 - ✓ Task: launch.md — graduate + PAUL install/init (headless) — Phase 2
 
+- ✓ Data layer: 5 default types (guide, config, skill-loadout per type) — Phase 3
+- ✓ Templates: 5 planning-{type}.md templates — Phase 3
+
+- ✓ Task: status.md — show projects pipeline — Phase 4
+- ✓ Task: add-type.md — user-extensible type system — Phase 4
+- ✓ Checklist: planning-quality.md — Phase 4
+
 ### Active (In Progress)
 
-- [ ] Task: status.md — show projects pipeline
-- [ ] Task: add-type.md — user-extensible type system
-- [ ] Data layer: 5 default types (application, workflow, client, utility, campaign)
-- [ ] Templates: 5 PLANNING-{type}.md templates
-- [ ] Checklist: planning-quality.md
+- [ ] Integration & installation testing
 
 ### Out of Scope
 
