@@ -98,7 +98,7 @@ console.log(banner);
 
 // Show help
 if (hasHelp) {
-  console.log(`  ${yellow}Usage:${reset} npx @chrisai/seed [options]
+  console.log(`  ${yellow}Usage:${reset} npx @goddessdorimy/seed [options]
 
   ${yellow}Options:${reset}
     ${cyan}-l, --local${reset}              Install to ./.opencode/commands/ instead of global
@@ -107,10 +107,10 @@ if (hasHelp) {
 
   ${yellow}Examples:${reset}
     ${dim}# Install globally (default) — available in all workspaces${reset}
-    npx @chrisai/seed
+    npx @goddessdorimy/seed
 
     ${dim}# Install to current project only${reset}
-    npx @chrisai/seed --local
+    npx @goddessdorimy/seed --local
 
   ${yellow}What gets installed:${reset}
     ${cyan}commands/seed/${reset}

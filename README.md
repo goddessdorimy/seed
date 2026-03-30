@@ -202,20 +202,20 @@ All integrations are additive. SEED works without any of them installed.
 ## Install
 
 ```bash
-npm i -g @chrisai/seed
+npm i -g @goddessdorimy/seed
 ```
 
 One command. Installs the skill to `~/.opencode/commands/seed/` — available in every workspace.
 
 ```bash
 # Global install (default) — available everywhere
-npm i -g @chrisai/seed
+npm i -g @goddessdorimy/seed
 
 # Install to current project only
-npm i -g @chrisai/seed -- --local
+npm i -g @goddessdorimy/seed -- --local
 
 # Custom opencode config directory
-npm i -g @chrisai/seed -- --config-dir /path/to/.opencode
+npm i -g @goddessdorimy/seed -- --config-dir /path/to/.opencode
 ```
 
 Then open opencode and type `/seed` to start.

@@ -64,17 +64,17 @@ Exit.
 
 Check if the PAUL framework is installed:
 ```bash
-ls ~/.opencode/paul-framework-opencode/ 2>/dev/null
+ls ~/.opencode/paul-framework-opencode-opencode/ 2>/dev/null
 ```
 
-<if condition="paul-framework-opencode directory exists">
+<if condition="paul-framework-opencode-opencode directory exists">
 PAUL is available. Proceed to headless init.
 </if>
 
-<if condition="paul-framework-opencode directory not found">
+<if condition="paul-framework-opencode-opencode directory not found">
 Inform the user:
 
-> "PAUL isn't installed globally yet. It needs to be at `~/.opencode/paul-framework-opencode/`."
+> "PAUL isn't installed globally yet. It needs to be at `~/.opencode/paul-framework-opencode-opencode/`."
 >
 > "Want to install it now? I can help set it up, or you can run `/paul-init` later after installing."
 
