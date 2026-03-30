@@ -10,7 +10,8 @@ REEMPLAZOS = {
     'claude': 'opencode',
     'AskUserQuestion': 'Question',
     'paul:':'paul-',
-    'paul-framework':'paul-framework-opencode'
+    'paul-framework':'paul-framework-opencode',
+    '@chrisai/seed':'@goddessdorimy/seed'
 }
 
 def ejecutar_reemplazo():
