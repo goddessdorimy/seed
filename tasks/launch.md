@@ -9,7 +9,7 @@ As a builder ready to start building, I want to graduate my project and set up P
 <when-to-use>
 - Ideation is complete and you want to start building immediately
 - You want PAUL-managed development (structured phases, plans, progress tracking)
-- You prefer one command over running `/seed graduate` then `/paul:init` separately
+- You prefer one command over running `/seed graduate` then `/paul-init` separately
 </when-to-use>
 
 <context>
@@ -45,7 +45,7 @@ After graduation is complete, ask the user:
 > PAUL gives you structured milestones, phases, plans, and progress tracking. Your PLANNING.md has enough detail to set up PAUL without re-answering questions.
 >
 > **Yes** — initialize PAUL now
-> **No** — just the graduation is fine (you can run `/paul:init` later)
+> **No** — just the graduation is fine (you can run `/paul-init` later)
 
 Wait for response.
 
@@ -53,7 +53,7 @@ Wait for response.
 Report graduation-only result:
 
 > "Graduated: `apps/{name}/`"
-> "Run `/paul:init` in `apps/{name}/` if you change your mind."
+> "Run `/paul-init` in `apps/{name}/` if you change your mind."
 
 Exit.
 </if>
@@ -64,19 +64,19 @@ Exit.
 
 Check if the PAUL framework is installed:
 ```bash
-ls ~/.claude/paul-framework/ 2>/dev/null
+ls ~/.opencode/paul-framework-opencode/ 2>/dev/null
 ```
 
-<if condition="paul-framework directory exists">
+<if condition="paul-framework-opencode directory exists">
 PAUL is available. Proceed to headless init.
 </if>
 
-<if condition="paul-framework directory not found">
+<if condition="paul-framework-opencode directory not found">
 Inform the user:
 
-> "PAUL isn't installed globally yet. It needs to be at `~/.claude/paul-framework/`."
+> "PAUL isn't installed globally yet. It needs to be at `~/.opencode/paul-framework-opencode/`."
 >
-> "Want to install it now? I can help set it up, or you can run `/paul:init` later after installing."
+> "Want to install it now? I can help set it up, or you can run `/paul-init` later after installing."
 
 Wait for response.
 
@@ -88,7 +88,7 @@ If user declines: exit gracefully with graduation-only result.
 <step name="headless_paul_init">
 ## Headless PAUL Init
 
-Run `/paul:init` in the graduated `apps/{name}/` directory with headless context:
+Run `/paul-init` in the graduated `apps/{name}/` directory with headless context:
 
 1. Read `apps/{name}/README.md` (synthesized from PLANNING.md during graduation)
 2. Also read the original `projects/{name}/PLANNING.md` for full depth
@@ -110,10 +110,10 @@ After PAUL initialization is approved:
 ```
 Launched: {name}
 Location: apps/{name}/
-PAUL: Initialized with {milestone} — {N} phases
+paul- Initialized with {milestone} — {N} phases
 
 Your project is ready for managed development.
-Run /paul:plan to start Phase 1.
+Run /paul-plan to start Phase 1.
 ```
 </step>
 
@@ -122,7 +122,7 @@ Run /paul:plan to start Phase 1.
 <output>
 - Everything from tasks/graduate.md (app directory, git repo, README, tracking)
 - `.paul/` directory in `apps/{name}/` (PROJECT.md, ROADMAP.md, STATE.md)
-- Project ready for `/paul:plan`
+- Project ready for `/paul-plan`
 </output>
 
 <acceptance-criteria>

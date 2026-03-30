@@ -48,7 +48,7 @@ Use these signals to route:
 | Type | Signals |
 |------|---------|
 | Application | Has UI, data model, API, deployment — software people use |
-| Workflow | Commands, hooks, CARL domains, templates — Claude Code tooling |
+| Workflow | Commands, hooks, CARL domains, templates — opencode tooling |
 | Client | Website for a client — business context, conversion, content |
 | Utility | Small tool, script, single-purpose — resists expansion |
 | Campaign | Content, marketing, launches — timeline-driven, not code-driven |

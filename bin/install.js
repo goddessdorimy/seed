@@ -101,8 +101,8 @@ if (hasHelp) {
   console.log(`  ${yellow}Usage:${reset} npx @chrisai/seed [options]
 
   ${yellow}Options:${reset}
-    ${cyan}-l, --local${reset}              Install to ./.claude/commands/ instead of global
-    ${cyan}-c, --config-dir <path>${reset}  Specify custom Claude config directory
+    ${cyan}-l, --local${reset}              Install to ./.opencode/commands/ instead of global
+    ${cyan}-c, --config-dir <path>${reset}  Specify custom opencode config directory
     ${cyan}-h, --help${reset}               Show this help message
 
   ${yellow}Examples:${reset}
@@ -125,10 +125,10 @@ if (hasHelp) {
 
 // Determine install target
 const explicitConfigDir = parseConfigDirArg();
-const configDir = expandTilde(explicitConfigDir) || expandTilde(process.env.CLAUDE_CONFIG_DIR);
-const globalDir = configDir || path.join(os.homedir(), '.claude');
-const claudeDir = hasLocal ? path.join(process.cwd(), '.claude') : globalDir;
-const seedDest = path.join(claudeDir, 'commands', 'seed');
+const configDir = expandTilde(explicitConfigDir) || expandTilde(process.env.opencode_CONFIG_DIR);
+const globalDir = configDir || path.join(os.homedir(), '.opencode');
+const opencodeDir = hasLocal ? path.join(process.cwd(), '.opencode') : globalDir;
+const seedDest = path.join(opencodeDir, 'commands', 'seed');
 
 const locationLabel = hasLocal
   ? seedDest.replace(process.cwd(), '.')
@@ -180,5 +180,5 @@ copyDir(checklistsSrc, checklistsDest);
 console.log(`  ${green}+${reset} checklists/ ${dim}(planning quality gate)${reset}`);
 
 console.log(`
-  ${green}Done!${reset} Open Claude Code and type ${cyan}/seed${reset} to start.
+  ${green}Done!${reset} Open opencode and type ${cyan}/seed${reset} to start.
 `);

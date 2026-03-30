@@ -1,7 +1,7 @@
 {
   "name": "@chrisai/seed",
   "version": "0.1.3",
-  "description": "Typed project incubator — guided ideation through graduation for Claude Code",
+  "description": "Typed project incubator — guided ideation through graduation for opencode",
   "bin": {
     "seed": "bin/install.js"
   },
@@ -16,8 +16,8 @@
     "terminal.svg"
   ],
   "keywords": [
-    "claude",
-    "claude-code",
+    "opencode",
+    "opencode-code",
     "ai",
     "ideation",
     "project-planning",

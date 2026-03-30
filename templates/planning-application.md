@@ -5,7 +5,7 @@
 **Created:** {date}
 **Type:** Application
 **Stack:** {framework + language + db + cache + deployment}
-**Skill Loadout:** ui-ux-pro-max, /paul:audit, sonarqube scan
+**Skill Loadout:** ui-ux-pro-max, /paul-audit, sonarqube scan
 **Quality Gates:** test coverage, security scan, accessibility, performance
 
 ---
@@ -148,7 +148,7 @@
 | Skill | When It Fires | Purpose |
 |-------|--------------|---------|
 | ui-ux-pro-max | Frontend phases | Design system, component quality |
-| /paul:audit | End of each milestone | Architecture review |
+| /paul-audit | End of each milestone | Architecture review |
 | sonarqube scan | End of each phase | Code quality, vulnerabilities |
 
 ### Quality Gates

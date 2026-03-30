@@ -7,7 +7,7 @@
 
 ## Section 2: Tech Stack
 **Explore:** Do you have a stack in mind, or are you exploring? What's the deployment target — local, cloud, edge? Any constraints from the team or existing infrastructure? Why this stack over alternatives?
-**Suggest:** For solo builders: Next.js + SQLite is fast to ship. For teams: consider what everyone knows. If they mention unfamiliar tech, suggest `/paul:discover` for research before committing.
+**Suggest:** For solo builders: Next.js + SQLite is fast to ship. For teams: consider what everyone knows. If they mention unfamiliar tech, suggest `/paul-discover` for research before committing.
 **Depth:** required
 
 ## Section 3: Data Model

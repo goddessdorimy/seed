@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-compatible-8b5cf6?style=flat-square)](https://claude.ai/code)
+[![opencode](https://img.shields.io/badge/opencode%20Code-compatible-8b5cf6?style=flat-square)](https://opencode.ai/code)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
 **Your AI project incubator.**<br/>
@@ -29,7 +29,7 @@ Take raw ideas through type-aware guided exploration and produce structured plan
 
 ## Ecosystem
 
-SEED is part of a broader Claude Code extension ecosystem:
+SEED is part of a broader opencode extension ecosystem:
 
 | System | What It Does | Link |
 |--------|-------------|------|
@@ -38,7 +38,7 @@ SEED is part of a broader Claude Code extension ecosystem:
 | **CARL** | Context Augmentation & Reinforcement Layer — dynamic rules loaded JIT by intent | [GitHub](https://github.com/ChristopherKahler/carl) |
 | **PAUL** | Project orchestration — Plan, Apply, Unify Loop | [GitHub](https://github.com/ChristopherKahler/paul) |
 | **SEED** | Typed project incubator — guided ideation through graduation into buildable projects | You are here |
-| **Skillsmith** | Skill builder — standardized syntax specs + guided workflows for Claude Code skills | [GitHub](https://github.com/ChristopherKahler/skillsmith) |
+| **Skillsmith** | Skill builder — standardized syntax specs + guided workflows for opencode skills | [GitHub](https://github.com/ChristopherKahler/skillsmith) |
 | **CC Strategic AI** | Skool community — courses, community, live support | [Skool](https://skool.com/cc-strategic-ai) |
 
 ---
@@ -47,7 +47,7 @@ SEED is part of a broader Claude Code extension ecosystem:
 
 You have an idea. Maybe it's an app, a workflow, a client site, a utility, or a content campaign. Before you start building, you need to answer the right questions — and the right questions depend on what type of project it is.
 
-SEED is a typed project incubator for Claude Code. It guides you through collaborative exploration shaped by your project type, produces a structured PLANNING.md, and graduates mature plans into buildable project directories. If you use PAUL, it can initialize a managed build from your plan without re-asking questions you already answered.
+SEED is a typed project incubator for opencode. It guides you through collaborative exploration shaped by your project type, produces a structured PLANNING.md, and graduates mature plans into buildable project directories. If you use PAUL, it can initialize a managed build from your plan without re-asking questions you already answered.
 
 **The coach, not the interrogator.** SEED brainstorms alongside you, offers suggestions when you're stuck, and pushes toward decisions when it's time. It doesn't fire questions at you — it thinks with you.
 
@@ -72,7 +72,7 @@ SEED ships with 5 default types. Each type shapes the conversation differently:
 | Type | Rigor | Sections | What It's For |
 |------|-------|----------|---------------|
 | **Application** | Deep | 10 | Software with UI, data model, API, deployment |
-| **Workflow** | Standard | 8 | Claude Code commands, hooks, CARL domains, skills |
+| **Workflow** | Standard | 8 | opencode commands, hooks, CARL domains, skills |
 | **Client** | Standard | 7 | Client websites — business context, conversion, content |
 | **Utility** | Tight | 6 | Small tools, scripts, single-purpose — resists expansion |
 | **Campaign** | Creative | 7 | Content, marketing, launches — timeline-driven |
@@ -164,7 +164,7 @@ Starting a PAUL project from scratch means answering a series of setup questions
 2. `/seed launch` graduates the project to `apps/{name}/` with git
 3. PAUL reads the PLANNING.md and derives its entire project structure from it
 4. PAUL proposes milestones, phases, and tech stack — you review and approve
-5. You're immediately ready to run `/paul:plan` for Phase 1
+5. You're immediately ready to run `/paul-plan` for Phase 1
 
 **No re-asking.** PAUL doesn't ask "What's this project?" or "What's the tech stack?" — those answers are already in the PLANNING.md that SEED produced. The only interaction is approving the proposed structure.
 
@@ -205,7 +205,7 @@ All integrations are additive. SEED works without any of them installed.
 npm i -g @chrisai/seed
 ```
 
-One command. Installs the skill to `~/.claude/commands/seed/` — available in every workspace.
+One command. Installs the skill to `~/.opencode/commands/seed/` — available in every workspace.
 
 ```bash
 # Global install (default) — available everywhere
@@ -214,16 +214,16 @@ npm i -g @chrisai/seed
 # Install to current project only
 npm i -g @chrisai/seed -- --local
 
-# Custom Claude config directory
-npm i -g @chrisai/seed -- --config-dir /path/to/.claude
+# Custom opencode config directory
+npm i -g @chrisai/seed -- --config-dir /path/to/.opencode
 ```
 
-Then open Claude Code and type `/seed` to start.
+Then open opencode and type `/seed` to start.
 
 ### What Gets Installed
 
 ```
-~/.claude/commands/seed/
+~/.opencode/commands/seed/
 ├── seed.md              Entry point (routing + persona)
 ├── tasks/               5 task files
 ├── data/                15 type-specific data files (5 types × 3 files)
@@ -235,7 +235,7 @@ No hooks, no MCP servers, no workspace data. SEED is pure markdown — zero runt
 
 ### Requirements
 
-- [Claude Code](https://claude.ai/code)
+- [opencode](https://opencode.ai/code)
 - Node.js >= 16 (for install script only — SEED itself has no runtime deps)
 
 ---

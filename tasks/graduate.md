@@ -111,7 +111,7 @@ Read `projects/{name}/PLANNING.md` fully. Generate `apps/{name}/README.md` by **
 - Keep implementation phases
 - Preserve tables and structured data (information-dense)
 - Preserve Type and Skill Loadout metadata — PAUL uses this for configuration
-- The README should be comprehensive enough to run `/paul:init` against
+- The README should be comprehensive enough to run `/paul-init` against
 
 Present the generated README to the user:
 
@@ -138,7 +138,7 @@ Apply edits and re-present until approved.
 
 3. **Update ACTIVE.md** — find the project entry and update:
    - Location: `apps/{name}/`
-   - Status: `Graduated — ready for /paul:init`
+   - Status: `Graduated — ready for /paul-init`
    - If no entry exists, ask user which section to add it under
 
 4. **Note graduation in PLANNING.md** — append to `projects/{name}/PLANNING.md`:
@@ -156,7 +156,7 @@ Apply edits and re-present until approved.
    Git: Initialized with initial commit
 
    Next steps:
-   - `/paul:init` in apps/{name}/ to start a managed build
+   - `/paul-init` in apps/{name}/ to start a managed build
    - `/seed launch {name}` does this automatically (graduate + PAUL init)
    ```
 </step>

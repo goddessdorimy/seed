@@ -16,8 +16,8 @@
 **Depth:** required
 
 ## Section 4: Interaction Design
-**Explore:** What's the entry point? User says X, Claude does Y. What's the conversation flow? Where are the decision points? What does "done" look like?
-**Suggest:** Write 2-3 example interactions: "User runs /command, Claude responds with..., user confirms..., Claude produces..." This is the spec that drives implementation.
+**Explore:** What's the entry point? User says X, opencode does Y. What's the conversation flow? Where are the decision points? What does "done" look like?
+**Suggest:** Write 2-3 example interactions: "User runs /command, opencode responds with..., user confirms..., opencode produces..." This is the spec that drives implementation.
 **Depth:** required
 
 ## Section 5: Output Artifacts

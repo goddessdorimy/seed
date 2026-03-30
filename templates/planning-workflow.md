@@ -3,8 +3,8 @@
 > {One-line description of what this workflow does}
 
 **Created:** {date}
-**Type:** Claude Code Workflow
-**Skill Loadout:** {skills relevant to building this — e.g., /paul:audit}
+**Type:** opencode Workflow
+**Skill Loadout:** {skills relevant to building this — e.g., /paul-audit}
 **Quality Gates:** {quality checks — e.g., governance review, integration testing}
 
 ---
@@ -55,14 +55,14 @@
 ### Entry Point
 ```
 User: /{command}
-Claude: {what happens}
+opencode: {what happens}
 ```
 
 ### Conversation Flow
-{Step-by-step: what Claude asks, what user provides, what Claude does with it. Include branching logic if applicable.}
+{Step-by-step: what opencode asks, what user provides, what opencode does with it. Include branching logic if applicable.}
 
 ### Session End
-{What artifacts are produced? What does Claude report? What's the next step prompt?}
+{What artifacts are produced? What does opencode report? What's the next step prompt?}
 
 ---
 

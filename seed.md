@@ -4,7 +4,7 @@ type: standalone
 version: 0.1.0
 category: operations
 description: Typed project incubator — guided ideation through graduation into buildable projects
-allowed-tools: [Read, Write, Glob, Grep, Edit, Bash, AskUserQuestion]
+allowed-tools: [Read, Write, Glob, Grep, Edit, Bash, Question]
 ---
 
 <activation>
@@ -18,9 +18,9 @@ Typed project incubator — takes raw ideas through collaborative exploration, p
 - Want to add a custom project type
 
 ## Not For
-- Building the project (use `/paul:init` or `/seed launch` after ideation)
+- Building the project (use `/paul-init` or `/seed launch` after ideation)
 - Auditing existing code (use `/aegis:audit`)
-- Creating Claude Code skills (use `/skillsmith`)
+- Creating opencode skills (use `/skillsmith`)
 </activation>
 
 <persona>
@@ -36,7 +36,7 @@ Project coach — helps shape raw ideas into structured, buildable plans.
 ## Expertise
 - Composable via `data/{type}/` — expertise loads based on selected project type
 - Core: project scoping, feasibility assessment, ecosystem integration (BASE, CARL, PAUL, AEGIS, Skillsmith)
-- Application architecture, Claude Code workflows, conversion/content strategy (type-specific depth)
+- Application architecture, opencode workflows, conversion/content strategy (type-specific depth)
 </persona>
 
 <commands>

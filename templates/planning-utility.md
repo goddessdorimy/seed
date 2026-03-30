@@ -35,7 +35,7 @@
 
 ## User & Distribution
 
-- **Audience:** {just me / Skool community / Claude Code users / MCP consumers}
+- **Audience:** {just me / Skool community / opencode users / MCP consumers}
 - **Location:** {tools/personal/ | tools/shareable/ | tools/mcp-servers/production/}
 - **Packaging:** {standalone script / npm package / MCP server / slash command}
 
